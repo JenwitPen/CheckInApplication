@@ -4,7 +4,7 @@ package com.checkin.maceducation.checkinapplication.Utility;
  * Created by jenwit on 15/9/2558.
  */
 public class WebServiceConfig {
-
+/// test commit
     //    public final String SOAP_ACTION = "http://tempuri.org/SelectEA";
     public static String SOAP_ACTION = "http://tempuri.org/";
     public static String WSDL_TARGET_NAMESPACE = "http://tempuri.org/";
