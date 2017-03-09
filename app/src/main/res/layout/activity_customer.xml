@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_Gray"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.checkin.maceducation.checkinapplication.CustomerListActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="@color/bg_header_BlackGray"
+        android:gravity="center_vertical|center_horizontal">
+
+
+        <TextView
+            android:id="@+id/txtTripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/lbl_Write"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/ll2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:gravity="center_vertical|center_horizontal">
+
+
+    <ListView
+    android:id="@+id/listCustomer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/list_divider"
+
+    android:listSelector="@drawable/list_row_selector" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
+
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/strbtnNewCustomer"-->
+        <!--android:onClick="Click_CheckIn"-->
+        <!--android:background="@color/bg_btn_BlackGray"-->
+        <!--android:textColor="@color/lbl_Write"-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/btnNewLocation"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginRight="10dp" />-->
+
+        <Button
+            android:id="@+id/btnFreeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg_btn_BlackGray"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="Click_CheckInFree"
+            android:text="@string/strbtnFreeLocation"
+            android:textColor="@color/lbl_Write"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCheckInList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_btn_BlackGray"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="Click_CheckInList"
+            android:text="@string/strbtnCheckInList"
+            android:textColor="@color/lbl_Write"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

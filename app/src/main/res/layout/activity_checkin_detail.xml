@@ -1,0 +1,461 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_Gray"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.checkin.maceducation.checkinapplication.CheckinDetailActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="9">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:stretchColumns="2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strLocationName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtLocationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Medium Text"-->
+                <!--android:id="@+id/txtLocationName" />-->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strAddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Medium Text"-->
+                <!--android:id="@+id/txtAddress" />-->
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strDateTime"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date Now"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strEnnergy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView143"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RadioGroup
+                        android:id="@+id/rdgEnergy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/rdbNoEnnergy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="ไม่เติม"/>
+
+                            <RadioButton
+                                android:id="@+id/rdbOil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="น้ำมัน"/>
+                            <RadioButton
+                                android:id="@+id/rdbGas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="แก๊ส"/>
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/edtEnergyMoney" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strSaveActivity"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView193"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:id="@+id/spnActivity" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView952"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strSubject"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1932"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:id="@+id/spnSubject" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView5s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strContractName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtActivityContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView5213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strContractPosition"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtActivityContractPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView5sq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strContractEmail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1qwe2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtActivityContractEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strContractTel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBitcoin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtActivityContactTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView911"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:text="@string/title_activity_activity_details"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/lbl_Blue"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtActivityRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_span="3"
+                    android:ems="20"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingBottom="5dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_span="3"-->
+                    <!--android:text="@string/strRemark"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/lbl_Blue"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</TableRow>-->
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edtRemark"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:layout_span="3"-->
+                    <!--android:ems="20"-->
+                    <!--android:inputType="textMultiLine" />-->
+            <!--</TableRow>-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_span="3"
+                    android:onClick="Click_Image"
+                    android:src="@drawable/icon_camera" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/bg_btn_BlackGray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="Click_Save"
+        android:text="@string/strSave"
+        android:textColor="@color/lbl_Write"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

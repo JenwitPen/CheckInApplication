@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">CheckIn App_P2</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="strLoading">Loading...</string>
+    <string name="strNotrip">คุณยังไม่ได้รับการวางแผนสำหรับทริปล่าสุด...</string>
+    <string name="strLocationFail">ไม่สามารถค้นหาตำแหน่งได้!!</string>
+    <string name="strLocationName">ชื่อสถานที่</string>
+    <string name="strProvince">จังหวัด</string>
+    <string name="strDistrict">อำเภอ</string>
+    <string name="strSchool">โรงเรียน</string>
+    <string name="strAddress">ที่อยู่</string>
+    <string name="strAddActivity">เพิ่มกิจกรรม</string>
+    <string name="strSaveActivity">กิจกรรม</string>
+    <string name="strRequestActivity">โปรดบันทึกกิจกรรม</string>
+    <string name="strActivity">สถานะ</string>
+    <string name="strSubject">กลุ่มสาระ</string>
+    <string name="strContractTel">เบอร์โทร</string>
+    <string name="strActivityRemark">ผลการปฏิบัตงาน</string>
+    <string name="strContractName">ผู้ติดต่อ</string>
+    <string name="strVersion">V 2.003</string>
+    <string name="strpopup">"ประเภทลูกค้าที่เข้าพบ\n\n-สีกแดง คือ ลูกค้าผ่านร้าน\n-สีน้ำเงิน คือ ลูกค้าปัจจุบัน\n-สีดำ คือ ลูกค้าใหม่"</string>
+
+    <string name="strContractEmail">E-mail</string>
+    <string name="strContractPosition">ตำแหน่ง</string>
+
+    <string name="strTel">โทรศัพท์</string>
+    <string name="strDateTime">วัน / เวลา</string>
+    <string name="strRemark">รายละเอียดเพิ่มเติม</string>
+    <string name="strBitcoin">:</string>
+    <string name="strSave">บันทึก</string>
+    <string name="strbtnNewCustomer">ลูกค้าใหม่</string>
+    <string name="strbtnFreeLocation">สถานที่อื่นๆ</string>
+    <string name="strbtnCheckInList">รายการเช็คอิน</string>
+    <string name="strMyLocation">สถานที่ปัจจุบัน</string>
+    <string name="strTempLocation">โปรดตรวจสอบรายการเช็คอิน ยังค้างอยู่</string>
+    <string name="strErrorService">ไม่สามารถติดต่อ Web service</string>
+    <string name="strNodata">ไม่มีมีข้อมูล</string>
+    <string name="strSuccess">โหลดข้อมูลสำเร็จ</string>
+    <string name="strSuccessSave">บันทึกข้อมูลสำเร็จ</string>
+    <string name="strNetworkLost">อินเตอร์เน็ตขาดการเชื่อมต่อ</string>
+    <string name="strEnnergy">เติมน้ำมัน</string>
+    <string name="strLoginActivity">เข้าสู่ระบบ</string>
+    <string name="title_activity_maps">Google Maps</string>
+    <string name="title_activity_customer_detail">รายละเอียดลูกค้า</string>
+    <string name="title_activity_activity_details">รายละเอียดกิจกรรม</string>
+    <string name="title_activity_activity_list">รายการกิจกรรม</string>
+    <string name="title_activity_checkin_detail">รายละเอียดเช็คอิน</string>
+    <string name="title_activity_check_in_list">รายการเช็คอิน</string>
+    <string name="title_activity_login">CheckIn App</string>
+    <string name="title_activity_customer_checkin">รายการที่เช็คอินลูกค้า</string>
+    <string name="title_activity_customer_list">รายการลูกค้า</string>
+    <string-array name="activity_name">
+        <item>เสนอขาย</item>
+        <item>รับคืน</item>
+        <item>วางบิล</item>
+        <item>เก็บเงิน</item>
+        <item>หาสมาชิกสมาคมครู</item>
+        <item>หาสมาชิกกิตติมศักดิ์</item>
+        <item>อบรมครู</item>
+        <item>ประชุม</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="activity_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="subject_name">
+        <item>ทักษะชีวิต(สามัญ)</item>
+        <item>เครื่องกล/ยานยนต์</item>
+        <item>ช่างกลโรงงาน</item>
+        <item>ไฟฟ้ากำลัง</item>
+        <item>อิเล็กทรอนิกส์</item>
+        <item>การบัญชี</item>
+        <item>การตลาด</item>
+        <item>คอมพิวเตอร์ธรุกิจ</item>
+        <item>ภาษาต่างประเทศ</item>
+        <item>คณิตศาสตร์</item>
+        <item>วิทยาศาสตร์</item>
+        <item>ภาษาไทย</item>
+        <item>สังคมศึกษา/ศาสนา/วัฒนธรรม</item>
+        <item>สุขศึกษา/พลศึกษา</item>
+        <item>การเรียนรู้ศิลปะ</item>
+        <item>การงานอาชีพและเทคโนโลยี</item>
+        <item>วิชาการ</item>
+        <item>พัสดุ</item>
+        <item>การเงิน</item>
+        <item>จัดซื้อ</item>
+        <item>อื่นๆ</item>
+    </string-array>
+
+    <string-array name="subject_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+</resources>
