@@ -51,7 +51,7 @@ import com.google.gson.Gson;
  */
 public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
-
+//test commit
     private UserLoginTask userLoginTask = null;
     private View loginFormView;
     private View progressView;
