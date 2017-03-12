@@ -34,6 +34,7 @@ import com.checkin.maceducation.checkinapplication.Utility.Utility;
 import com.google.gson.Gson;
 
 import java.util.List;
+import java.util.Random;
 
 public class CustomerListActivity extends AppCompatActivity {
     CallBack cb;
@@ -56,7 +57,13 @@ public class CustomerListActivity extends AppCompatActivity {
         GetIntentData();
         StartActivity();
 //        Toast.makeText(this,, Toast.LENGTH_LONG).show();
-        showToastMessage(getString(R.string.strpopup));
+        Random rand = new Random();
+
+        int  n = rand.nextInt(60) + 1;
+        if(n<40) {
+            showToastMessage(getString(R.string.strpopup));
+        }
+
 
 
         new ListCustomerTask().execute();

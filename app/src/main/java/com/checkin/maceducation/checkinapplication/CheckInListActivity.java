@@ -109,30 +109,35 @@ public class CheckInListActivity extends AppCompatActivity {
                 ListCheckIn = jsonResponse.get$values();
 
                 if (ListCheckIn.size() > 0) {
-                    if (listTempCheckIn.size() > 0) {
-                        for (CheckIn item : listTempCheckIn) {
-//                            (Long id, Integer TripEaID, String CheckInName, String CheckInAddress, String CheckInDate, String Latitude, String Longitude, String Remark, String Image, Integer CheckInType, Integer StatusSend, Integer TripEaCustomerID,
-//                              Integer EnergyTypeID, Double EnergyPrice, Integer ActivityID, String CheckInActivityRemark, String CheckInActivityContact, String CheckInActivityPosition, String CheckInActivityEmail, String CheckInActivityTel, Integer SubjectID, Integer EAID) {
-                            ListCheckIn.add(new Entity_CheckInList(0,  item.getTripEaID()
-                                    , item.getCheckInName(), item.getCheckInAddress(), item.getCheckInDate(),  item.getLatitude(), item.getLongitude()
-                                    , item.getRemark(), item.getImage()
-                                    , item.getCheckInType(), item.getStatusSend(),item.getTripEaCustomerID(),item.getEnergyTypeID(),item.getEnergyPrice(),item.getId()
-                            ,item.getActivityID(),item.getCheckInActivityRemark(),item.getCheckInActivityContact(),item.getCheckInActivityPosition(),item.getCheckInActivityEmail(),item.getCheckInActivityTel(),item.getSubjectID(),item.getEAID()));
 
-
-                        }
-                    }
                     cb.setIsSuccsess(true);
                     cb.setStrSuccess(getString(R.string.strSuccess));
 
                 }
                 else {
-                    cb.setIsSuccsess(false);
+                    cb.setIsSuccsess(true);
                     cb.setStrError(getString(R.string.strNodata));
 
                 }
 
+                if (listTempCheckIn.size() > 0) {
+                    for (CheckIn item : listTempCheckIn) {
+//                            (Long id, Integer TripEaID, String CheckInName, String CheckInAddress, String CheckInDate, String Latitude, String Longitude, String Remark, String Image, Integer CheckInType, Integer StatusSend, Integer TripEaCustomerID,
+//                              Integer EnergyTypeID, Double EnergyPrice, Integer ActivityID, String CheckInActivityRemark, String CheckInActivityContact, String CheckInActivityPosition, String CheckInActivityEmail, String CheckInActivityTel, Integer SubjectID, Integer EAID) {
+                        ListCheckIn.add(new Entity_CheckInList(0,  item.getTripEaID()
+                                , item.getCheckInName(), item.getCheckInAddress(), item.getCheckInDate(),  item.getLatitude(), item.getLongitude()
+                                , item.getRemark(), item.getImage()
+                                , item.getCheckInType(), item.getStatusSend(),item.getTripEaCustomerID(),item.getEnergyTypeID(),item.getEnergyPrice(),item.getId()
+                                ,item.getActivityID(),item.getCheckInActivityRemark(),item.getCheckInActivityContact(),item.getCheckInActivityPosition(),item.getCheckInActivityEmail(),item.getCheckInActivityTel(),item.getSubjectID(),item.getEAID()));
 
+
+                    }
+                    cb.setIsSuccsess(true);
+                    cb.setStrSuccess(getString(R.string.strSuccess));
+                }else
+                {
+
+                }
             } catch (Exception e) {
                 cb.setIsSuccsess(false);
                 cb.setStrError(getString((R.string.strErrorService)));

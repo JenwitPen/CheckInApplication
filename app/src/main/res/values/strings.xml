@@ -18,7 +18,7 @@
     <string name="strContractTel">เบอร์โทร</string>
     <string name="strActivityRemark">ผลการปฏิบัตงาน</string>
     <string name="strContractName">ผู้ติดต่อ</string>
-    <string name="strVersion">V 2.003</string>
+    <string name="strVersion">V 2.004</string>
     <string name="strpopup">"ประเภทลูกค้าที่เข้าพบ\n\n-สีกแดง คือ ลูกค้าผ่านร้าน\n-สีน้ำเงิน คือ ลูกค้าปัจจุบัน\n-สีดำ คือ ลูกค้าใหม่"</string>
 
     <string name="strContractEmail">E-mail</string>

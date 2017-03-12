@@ -13,5 +13,6 @@ public class WebServiceConfig {
    // public  static String SOAP_ADDRESS = "http://10.0.2.2/Checkin/WebService/CheckInWebService.asmx";
  //  public static String SOAP_ADDRESS = "http://203.146.16.244/CheckIn/WebService/CheckInWebService.asmx";
     public static String SOAP_ADDRESS = "http://203.146.16.244/CheckIn_P2/WebService/CheckInWebService.asmx";
-    //    public static String SOAP_ADDRESS = "http://203.146.16.244/CheckIn_test/WebService/CheckInWebService.asmx";
+
+    //   public static String SOAP_ADDRESS = "http://203.146.16.244/CheckIn_test/WebService/CheckInWebService.asmx";
 }
