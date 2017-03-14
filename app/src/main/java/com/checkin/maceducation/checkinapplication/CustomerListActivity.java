@@ -317,8 +317,8 @@ public class CustomerListActivity extends AppCompatActivity {
             new ListCustomerTask().execute();
 
 
-                searchView.setQuery("", false);
-                searchView.clearFocus();
+//                searchView.setQuery("", false);
+//                searchView.clearFocus();
           //      m_CustomerName="";
 
 
